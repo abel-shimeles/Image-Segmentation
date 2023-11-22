@@ -26,4 +26,4 @@ Some of the sample outputs of the model look like the following:
 
 <img src="images/Sample Outputs.png" style="width:900px;height:450px;">
 
-**NOTE:** You can get the model structure in (outputs.py)[outputs.py] file and the implementation in the (jupyter notebook)[Image_Segmentation_with_U-Net.ipynb].
+**NOTE:** You can get the model structure in [outputs.py](outputs.py) file and the implementation in the [jupyter notebook](Image_Segmentation_with_U-Net.ipynb).
