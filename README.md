@@ -4,7 +4,7 @@ This repository is the implementation of building of U-Net, a type of CNN design
 
 This type of image classification is called semantic image segmentation. It's similar to object detection in that both ask the question: "What objects are in this image and where in the image are those objects located?," but where object detection labels objects with bounding boxes that may include pixels that aren't part of the object, semantic image segmentation allows you to predict a precise mask for each object in the image by labeling each pixel in the image with its corresponding class.
 
-<img src="images/carseg.png" style="width:750px;height:300px;">
+<img src="images/carseg.png" style="width:900px;height:400px;">
 
 
 ## U-Net
@@ -16,7 +16,7 @@ Unfortunately, the final feature layer of the FCN suffers from information loss 
 
 U-Net improves on the FCN, using a somewhat similar design, but differing in some important ways.  Instead of one transposed convolution at the end of the network, it uses a matching number of convolutions for downsampling the input image to a feature map, and transposed convolutions for upsampling those maps back up to the original input image size. It also adds skip connections, to retain information that would otherwise become lost during encoding. Skip connections send information to every upsampling layer in the decoder from the corresponding downsampling layer in the encoder, capturing finer information while also keeping computation low. These help prevent information loss, as well as model overfitting. 
 
-<img src="images/unet.png" style="width:750px;height:300px;">
+<img src="images/unet.png" style="width:9000px;height:450px;">
 <caption><center> <u><b> Figure 2 </u></b>: U-Net Architecture<br> </center></caption>
 
 
@@ -24,6 +24,6 @@ U-Net improves on the FCN, using a somewhat similar design, but differing in som
 
 Some of the sample outputs of the model look like the following:
 
-<img src="images/Sample Outputs.png" style="width:750px;height:300px;">
+<img src="images/Sample Outputs.png" style="width:900px;height:450px;">
 
 **NOTE:** You can get the model structure in (outputs.py)[outputs.py] file and the implementation in the (jupyter notebook)[Image_Segmentation_with_U-Net.ipynb].
